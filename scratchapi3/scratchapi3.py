@@ -1,7 +1,8 @@
+#run scratch login first
 #get the csrf token from chrome://settings/cookies/detail?site=scratch.mit.edu&search=cookies or clicking on the cookie icon on scratch
 #to run use scratch = Login("USERNAME","PASSWORD","CSRF_TOKEN")
 import requests
-class Scratch:
+class ScratchLogin:
   def get_csrf(self):
     #response = self.session.get('https://scratch.mit.edu/') 
     #return self.session.cookies.get_dict()
