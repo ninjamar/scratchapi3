@@ -16,7 +16,7 @@ class Scratch:
     self.username = username
     self.password = password
     self.csrf_token = csrf_token
-    login()
+    self.login()
     #self.session = requests.Session()
 
 
@@ -24,9 +24,9 @@ class Comment:
   def __init__(self,csrf_token):
     self.csrf_token = csrf_token
 
-  def profile_comment(self,content,parent_id,commentee_id,user,csrf_token):
+  def profile_comment(self,content,parent_id,commentee_id,user):
     url = f'https://scratch.mit.edu/site-api/comments/user/{user}/add/'
-    data = {"content":content,"parent_id":parent_id,"commentee_id":commentee_id,"csrfmiddlewaretoken":csrf_token}
+    data = {"content":content,"parent_id":parent_id,"commentee_id":commentee_id,"csrfmiddlewaretoken":self.csrf_token}
     x = requests.post(url=url,headers={'referer': "https://scratch.mit.edu"},data=data)
     return x.text
 
