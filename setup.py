@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'scratchapi3',
   author_email = 'example@example.com',
-  version = '0.0.1',
+  version = '0.0.2',
   classifiers = [
       "Programming Language :: Python :: 3",
   ],
