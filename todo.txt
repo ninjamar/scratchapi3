@@ -1,2 +1,2 @@
-change cloud variables using websockets
-get cookies from a website
+change cloud variables using websockets -python
+get cookies from a website -python
