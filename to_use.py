@@ -9,4 +9,7 @@ comment.profile_comment('content','parent_id','commentee_id','user') #can return
 cloud = Cloud()
 cloud.cloudlog('project_id','limit','offset') #returns cloud log
 #misc
+misc = Misc()
 misc = misc.message('user') #returns count
+#login only - Beta
+login_only = Login_Only('my_username') #- Nothing in class so useless
